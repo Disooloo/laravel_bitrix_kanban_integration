@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::resource('/', MainController::class);
+
+Route::post('/deals', [MainController::class, 'store'])->name('deals.store');
